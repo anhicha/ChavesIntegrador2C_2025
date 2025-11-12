@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto Integrador EP: Timer</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Proyecto Integrador EP<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group___timer.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Timer <div class="ingroups"><a class="el" href="group___drivers___programable.html">Drivers Programable</a> &raquo; <a class="el" href="group___drivers___microcontroller.html">Drivers microcontroller</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Estructuras de datos</h2></td></tr>
+<tr class="memitem:timer_5Fconfig_5Ft" id="r_timer_5Fconfig_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtimer__config__t.html">timer_config_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer configuration struct.  <a href="structtimer__config__t.html#details">Más...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+typedefs</h2></td></tr>
+<tr class="memitem:ga5b93c89e9ca8359fa618753610f77a8d" id="r_ga5b93c89e9ca8359fa618753610f77a8d"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="#gacc4e64394d03a6e790f8e52c674534d9">timers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a></td></tr>
+<tr class="memdesc:ga5b93c89e9ca8359fa618753610f77a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer driver for the ESP-EDU Board.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:gacc4e64394d03a6e790f8e52c674534d9" id="r_gacc4e64394d03a6e790f8e52c674534d9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacc4e64394d03a6e790f8e52c674534d9">timers</a> { <a class="el" href="#ggacc4e64394d03a6e790f8e52c674534d9a179b1231f027eba52fa4ef94ec174598">TIMER_A</a>
+, <a class="el" href="#ggacc4e64394d03a6e790f8e52c674534d9a7537925211db58591cb5eeb7ebc7f44f">TIMER_B</a>
+, <a class="el" href="#ggacc4e64394d03a6e790f8e52c674534d9a77982cc924eb33d3ea2f8f541f757f9d">TIMER_C</a>
+ }</td></tr>
+<tr class="memdesc:gacc4e64394d03a6e790f8e52c674534d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer driver for the ESP-EDU Board.  <a href="#gacc4e64394d03a6e790f8e52c674534d9">Más...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:gae8617c0d176463a60441464ad26563f6" id="r_gae8617c0d176463a60441464ad26563f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae8617c0d176463a60441464ad26563f6">TimerInit</a> (<a class="el" href="structtimer__config__t.html">timer_config_t</a> *timer_ini)</td></tr>
+<tr class="memdesc:gae8617c0d176463a60441464ad26563f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer initialization.  <br /></td></tr>
+<tr class="memitem:ga0b1779c5b8f91cc83c8bfd127071ea2f" id="r_ga0b1779c5b8f91cc83c8bfd127071ea2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0b1779c5b8f91cc83c8bfd127071ea2f">TimerStart</a> (<a class="el" href="#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a> timer)</td></tr>
+<tr class="memdesc:ga0b1779c5b8f91cc83c8bfd127071ea2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start timer count.  <br /></td></tr>
+<tr class="memitem:ga1e39dd9df84ea59700f20ec1d92c6291" id="r_ga1e39dd9df84ea59700f20ec1d92c6291"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1e39dd9df84ea59700f20ec1d92c6291">TimerRead</a> (<a class="el" href="#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a> timer)</td></tr>
+<tr class="memdesc:ga1e39dd9df84ea59700f20ec1d92c6291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the current value of the selected timer.  <br /></td></tr>
+<tr class="memitem:ga0860e7ffff656386879c7dcd600d0629" id="r_ga0860e7ffff656386879c7dcd600d0629"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0860e7ffff656386879c7dcd600d0629">TimerStop</a> (<a class="el" href="#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a> timer)</td></tr>
+<tr class="memdesc:ga0860e7ffff656386879c7dcd600d0629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause timer.  <br /></td></tr>
+<tr class="memitem:ga80ed309959e5a179f5676ed4af547fa1" id="r_ga80ed309959e5a179f5676ed4af547fa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga80ed309959e5a179f5676ed4af547fa1">TimerReset</a> (<a class="el" href="#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a> timer)</td></tr>
+<tr class="memdesc:ga80ed309959e5a179f5676ed4af547fa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset timer count to 0.  <br /></td></tr>
+<tr class="memitem:ga123ccb39ca948b099917fc7a8d73fba4" id="r_ga123ccb39ca948b099917fc7a8d73fba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga123ccb39ca948b099917fc7a8d73fba4">TimerUpdatePeriod</a> (<a class="el" href="#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a> timer, uint32_t period)</td></tr>
+<tr class="memdesc:ga123ccb39ca948b099917fc7a8d73fba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update timer period.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Documentación de «typedef»</h2>
+<a id="ga5b93c89e9ca8359fa618753610f77a8d" name="ga5b93c89e9ca8359fa618753610f77a8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b93c89e9ca8359fa618753610f77a8d">&#9670;&#160;</a></span>timer_mcu_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="#gacc4e64394d03a6e790f8e52c674534d9">timers</a> <a class="el" href="#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timer driver for the ESP-EDU Board. </p>
+<dl class="section author"><dt>Autor</dt><dd>Albano Peñalva</dd></dl>
+<h1 class="doxsection"><a class="anchor" id="changelog"></a>
+Changelog</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">Date  </th><th class="markdownTableHeadLeft">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">20/10/2023  </td><td class="markdownTableBodyLeft">Document creation  </td></tr>
+</table>
+<p>List of available timers in this driver </p>
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Documentación de enumeraciones</h2>
+<a id="gacc4e64394d03a6e790f8e52c674534d9" name="gacc4e64394d03a6e790f8e52c674534d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc4e64394d03a6e790f8e52c674534d9">&#9670;&#160;</a></span>timers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#gacc4e64394d03a6e790f8e52c674534d9">timers</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timer driver for the ESP-EDU Board. </p>
+<dl class="section author"><dt>Autor</dt><dd>Albano Peñalva</dd></dl>
+<h1 class="doxsection"><a class="anchor" id="changelog"></a>
+Changelog</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">Date  </th><th class="markdownTableHeadLeft">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">20/10/2023  </td><td class="markdownTableBodyLeft">Document creation  </td></tr>
+</table>
+<p>List of available timers in this driver </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="ggacc4e64394d03a6e790f8e52c674534d9a179b1231f027eba52fa4ef94ec174598" name="ggacc4e64394d03a6e790f8e52c674534d9a179b1231f027eba52fa4ef94ec174598"></a>TIMER_A&#160;</td><td class="fielddoc"><p>Timer A </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacc4e64394d03a6e790f8e52c674534d9a7537925211db58591cb5eeb7ebc7f44f" name="ggacc4e64394d03a6e790f8e52c674534d9a7537925211db58591cb5eeb7ebc7f44f"></a>TIMER_B&#160;</td><td class="fielddoc"><p>Timer B </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacc4e64394d03a6e790f8e52c674534d9a77982cc924eb33d3ea2f8f541f757f9d" name="ggacc4e64394d03a6e790f8e52c674534d9a77982cc924eb33d3ea2f8f541f757f9d"></a>TIMER_C&#160;</td><td class="fielddoc"><p>Timer C </p>
+</td></tr>
+</table>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8h_source.html#l00031">31</a> del archivo <a class="el" href="timer__mcu_8h_source.html">timer_mcu.h</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="gae8617c0d176463a60441464ad26563f6" name="gae8617c0d176463a60441464ad26563f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8617c0d176463a60441464ad26563f6">&#9670;&#160;</a></span>TimerInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TimerInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtimer__config__t.html">timer_config_t</a> *</td>          <td class="paramname"><span class="paramname"><em>timer_ini</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timer initialization. </p>
+<dl class="section note"><dt>Nota</dt><dd>Timer are stopped after init</dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer_ini</td><td>Pointer to timer configuration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00067">67</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="timer__mcu_8c_source.html#l00044">alarm_config_a</a>, <a class="el" href="timer__mcu_8c_source.html#l00045">alarm_config_b</a>, <a class="el" href="timer__mcu_8c_source.html#l00046">alarm_config_c</a>, <a class="el" href="timer__mcu_8h_source.html#l00042">timer_config_t::func_p</a>, <a class="el" href="ili9341_8c_source.html#l00019">NULL</a>, <a class="el" href="timer__mcu_8h_source.html#l00043">timer_config_t::param_p</a>, <a class="el" href="timer__mcu_8h_source.html#l00041">timer_config_t::period</a>, <a class="el" href="timer__mcu_8c_source.html#l00019">RESET_COUNT_VALUE</a>, <a class="el" href="timer__mcu_8h_source.html#l00040">timer_config_t::timer</a>, <a class="el" href="timer__mcu_8h_source.html#l00032">TIMER_A</a>, <a class="el" href="timer__mcu_8c_source.html#l00021">timer_a</a>, <a class="el" href="timer__mcu_8c_source.html#l00035">timer_a_isr_p</a>, <a class="el" href="timer__mcu_8c_source.html#l00040">timer_a_user_data</a>, <a class="el" href="timer__mcu_8h_source.html#l00033">TIMER_B</a>, <a class="el" href="timer__mcu_8c_source.html#l00022">timer_b</a>, <a class="el" href="timer__mcu_8c_source.html#l00036">timer_b_isr_p</a>, <a class="el" href="timer__mcu_8c_source.html#l00041">timer_b_user_data</a>, <a class="el" href="timer__mcu_8h_source.html#l00034">TIMER_C</a>, <a class="el" href="timer__mcu_8c_source.html#l00023">timer_c</a>, <a class="el" href="timer__mcu_8c_source.html#l00037">timer_c_isr_p</a>, <a class="el" href="timer__mcu_8c_source.html#l00042">timer_c_user_data</a> y <a class="el" href="timer__mcu_8c_source.html#l00030">timer_config</a>.</p>
+
+</div>
+</div>
+<a id="ga1e39dd9df84ea59700f20ec1d92c6291" name="ga1e39dd9df84ea59700f20ec1d92c6291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e39dd9df84ea59700f20ec1d92c6291">&#9670;&#160;</a></span>TimerRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t TimerRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a></td>          <td class="paramname"><span class="paramname"><em>timer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the current value of the selected timer. </p>
+<p>The returned value is counted from the last call to <a class="el" href="#gae8617c0d176463a60441464ad26563f6" title="Timer initialization.">TimerInit()</a>, <a class="el" href="#ga0b1779c5b8f91cc83c8bfd127071ea2f" title="Start timer count.">TimerStart()</a> or the last timer interrupt.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>Timer number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>The current value of the timer in us </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00130">130</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="timer__mcu_8h_source.html#l00032">TIMER_A</a>, <a class="el" href="timer__mcu_8c_source.html#l00021">timer_a</a>, <a class="el" href="timer__mcu_8h_source.html#l00033">TIMER_B</a>, <a class="el" href="timer__mcu_8c_source.html#l00022">timer_b</a>, <a class="el" href="timer__mcu_8h_source.html#l00034">TIMER_C</a> y <a class="el" href="timer__mcu_8c_source.html#l00023">timer_c</a>.</p>
+
+</div>
+</div>
+<a id="ga80ed309959e5a179f5676ed4af547fa1" name="ga80ed309959e5a179f5676ed4af547fa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80ed309959e5a179f5676ed4af547fa1">&#9670;&#160;</a></span>TimerReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TimerReset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a></td>          <td class="paramname"><span class="paramname"><em>timer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset timer count to 0. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>Timer number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00160">160</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="timer__mcu_8c_source.html#l00019">RESET_COUNT_VALUE</a>, <a class="el" href="timer__mcu_8h_source.html#l00032">TIMER_A</a>, <a class="el" href="timer__mcu_8c_source.html#l00021">timer_a</a>, <a class="el" href="timer__mcu_8h_source.html#l00033">TIMER_B</a>, <a class="el" href="timer__mcu_8c_source.html#l00022">timer_b</a>, <a class="el" href="timer__mcu_8h_source.html#l00034">TIMER_C</a> y <a class="el" href="timer__mcu_8c_source.html#l00023">timer_c</a>.</p>
+
+</div>
+</div>
+<a id="ga0b1779c5b8f91cc83c8bfd127071ea2f" name="ga0b1779c5b8f91cc83c8bfd127071ea2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b1779c5b8f91cc83c8bfd127071ea2f">&#9670;&#160;</a></span>TimerStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TimerStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a></td>          <td class="paramname"><span class="paramname"><em>timer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start timer count. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>Timer number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00116">116</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="timer__mcu_8h_source.html#l00032">TIMER_A</a>, <a class="el" href="timer__mcu_8c_source.html#l00021">timer_a</a>, <a class="el" href="timer__mcu_8h_source.html#l00033">TIMER_B</a>, <a class="el" href="timer__mcu_8c_source.html#l00022">timer_b</a>, <a class="el" href="timer__mcu_8h_source.html#l00034">TIMER_C</a> y <a class="el" href="timer__mcu_8c_source.html#l00023">timer_c</a>.</p>
+
+</div>
+</div>
+<a id="ga0860e7ffff656386879c7dcd600d0629" name="ga0860e7ffff656386879c7dcd600d0629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0860e7ffff656386879c7dcd600d0629">&#9670;&#160;</a></span>TimerStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TimerStop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a></td>          <td class="paramname"><span class="paramname"><em>timer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pause timer. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>Timer number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00146">146</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="timer__mcu_8h_source.html#l00032">TIMER_A</a>, <a class="el" href="timer__mcu_8c_source.html#l00021">timer_a</a>, <a class="el" href="timer__mcu_8h_source.html#l00033">TIMER_B</a>, <a class="el" href="timer__mcu_8c_source.html#l00022">timer_b</a>, <a class="el" href="timer__mcu_8h_source.html#l00034">TIMER_C</a> y <a class="el" href="timer__mcu_8c_source.html#l00023">timer_c</a>.</p>
+
+</div>
+</div>
+<a id="ga123ccb39ca948b099917fc7a8d73fba4" name="ga123ccb39ca948b099917fc7a8d73fba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga123ccb39ca948b099917fc7a8d73fba4">&#9670;&#160;</a></span>TimerUpdatePeriod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TimerUpdatePeriod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a></td>          <td class="paramname"><span class="paramname"><em>timer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>period</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update timer period. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">period</td><td>New timer period in us</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The function will update the timer period for the timer that was previously configured using <a class="el" href="#gae8617c0d176463a60441464ad26563f6" title="Timer initialization.">TimerInit()</a>.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>Timer number </td></tr>
+    <tr><td class="paramname">period</td><td>Period (in us) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00174">174</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="timer__mcu_8c_source.html#l00044">alarm_config_a</a>, <a class="el" href="timer__mcu_8c_source.html#l00045">alarm_config_b</a>, <a class="el" href="timer__mcu_8c_source.html#l00046">alarm_config_c</a>, <a class="el" href="timer__mcu_8h_source.html#l00032">TIMER_A</a>, <a class="el" href="timer__mcu_8c_source.html#l00021">timer_a</a>, <a class="el" href="timer__mcu_8h_source.html#l00033">TIMER_B</a>, <a class="el" href="timer__mcu_8c_source.html#l00022">timer_b</a>, <a class="el" href="timer__mcu_8h_source.html#l00034">TIMER_C</a> y <a class="el" href="timer__mcu_8c_source.html#l00023">timer_c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

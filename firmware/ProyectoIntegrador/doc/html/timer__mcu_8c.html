@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto Integrador EP: Referencia del archivo C:/Repositorios/Chaves_2C_2025/firmware/drivers/microcontroller/src/timer_mcu.c</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Proyecto Integrador EP<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('timer__mcu_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia del archivo timer_mcu.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="timer__mcu_8h_source.html">timer_mcu.h</a>&quot;</code><br />
+<code>#include &quot;driver/gptimer.h&quot;</code><br />
+<code>#include &quot;freertos/FreeRTOS.h&quot;</code><br />
+<code>#include &quot;freertos/task.h&quot;</code><br />
+</div>
+<p><a href="timer__mcu_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a0084affffdb426de14a2629cfe92c652" id="r_a0084affffdb426de14a2629cfe92c652"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0084affffdb426de14a2629cfe92c652">US_RESOLUTION_HZ</a>&#160;&#160;&#160;1000000</td></tr>
+<tr class="memitem:aa7a65675b0d17a71d0646e743bb4d1f0" id="r_aa7a65675b0d17a71d0646e743bb4d1f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7a65675b0d17a71d0646e743bb4d1f0">RESET_COUNT_VALUE</a>&#160;&#160;&#160;0</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:gae8617c0d176463a60441464ad26563f6" id="r_gae8617c0d176463a60441464ad26563f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___timer.html#gae8617c0d176463a60441464ad26563f6">TimerInit</a> (<a class="el" href="structtimer__config__t.html">timer_config_t</a> *timer_ini)</td></tr>
+<tr class="memdesc:gae8617c0d176463a60441464ad26563f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer initialization.  <br /></td></tr>
+<tr class="memitem:ga0b1779c5b8f91cc83c8bfd127071ea2f" id="r_ga0b1779c5b8f91cc83c8bfd127071ea2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___timer.html#ga0b1779c5b8f91cc83c8bfd127071ea2f">TimerStart</a> (<a class="el" href="group___timer.html#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a> timer)</td></tr>
+<tr class="memdesc:ga0b1779c5b8f91cc83c8bfd127071ea2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start timer count.  <br /></td></tr>
+<tr class="memitem:ga1e39dd9df84ea59700f20ec1d92c6291" id="r_ga1e39dd9df84ea59700f20ec1d92c6291"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___timer.html#ga1e39dd9df84ea59700f20ec1d92c6291">TimerRead</a> (<a class="el" href="group___timer.html#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a> timer)</td></tr>
+<tr class="memdesc:ga1e39dd9df84ea59700f20ec1d92c6291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the current value of the selected timer.  <br /></td></tr>
+<tr class="memitem:ga0860e7ffff656386879c7dcd600d0629" id="r_ga0860e7ffff656386879c7dcd600d0629"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___timer.html#ga0860e7ffff656386879c7dcd600d0629">TimerStop</a> (<a class="el" href="group___timer.html#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a> timer)</td></tr>
+<tr class="memdesc:ga0860e7ffff656386879c7dcd600d0629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause timer.  <br /></td></tr>
+<tr class="memitem:ga80ed309959e5a179f5676ed4af547fa1" id="r_ga80ed309959e5a179f5676ed4af547fa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___timer.html#ga80ed309959e5a179f5676ed4af547fa1">TimerReset</a> (<a class="el" href="group___timer.html#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a> timer)</td></tr>
+<tr class="memdesc:ga80ed309959e5a179f5676ed4af547fa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset timer count to 0.  <br /></td></tr>
+<tr class="memitem:ga123ccb39ca948b099917fc7a8d73fba4" id="r_ga123ccb39ca948b099917fc7a8d73fba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___timer.html#ga123ccb39ca948b099917fc7a8d73fba4">TimerUpdatePeriod</a> (<a class="el" href="group___timer.html#ga5b93c89e9ca8359fa618753610f77a8d">timer_mcu_t</a> timer, uint32_t period)</td></tr>
+<tr class="memdesc:ga123ccb39ca948b099917fc7a8d73fba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update timer period.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:adb4864b7053f61a0691085c9e7f48207" id="r_adb4864b7053f61a0691085c9e7f48207"><td class="memItemLeft" align="right" valign="top">gptimer_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb4864b7053f61a0691085c9e7f48207">timer_a</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memitem:aef94044d1e3bc38b47b43af16c59ea60" id="r_aef94044d1e3bc38b47b43af16c59ea60"><td class="memItemLeft" align="right" valign="top">gptimer_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef94044d1e3bc38b47b43af16c59ea60">timer_b</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memitem:a2939aafd32facea4e83f1b1a2573df8d" id="r_a2939aafd32facea4e83f1b1a2573df8d"><td class="memItemLeft" align="right" valign="top">gptimer_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2939aafd32facea4e83f1b1a2573df8d">timer_c</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memitem:a8cbe89279afcba4e146f4f4f851f55dd" id="r_a8cbe89279afcba4e146f4f4f851f55dd"><td class="memItemLeft" align="right" valign="top">const gptimer_config_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cbe89279afcba4e146f4f4f851f55dd">timer_config</a></td></tr>
+<tr class="memdesc:a8cbe89279afcba4e146f4f4f851f55dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for the timer.  <br /></td></tr>
+<tr class="memitem:a3cf703184a43c9df961f5391e2fb1795" id="r_a3cf703184a43c9df961f5391e2fb1795"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cf703184a43c9df961f5391e2fb1795">timer_a_isr_p</a> )(void *)</td></tr>
+<tr class="memitem:a289b78452d903091ccd8f6b4021d195c" id="r_a289b78452d903091ccd8f6b4021d195c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a289b78452d903091ccd8f6b4021d195c">timer_b_isr_p</a> )(void *)</td></tr>
+<tr class="memitem:a86031d2b8cf8f83b53cbe749d9f62112" id="r_a86031d2b8cf8f83b53cbe749d9f62112"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86031d2b8cf8f83b53cbe749d9f62112">timer_c_isr_p</a> )(void *)</td></tr>
+<tr class="memitem:a25f9388382a57a243263678e74268e73" id="r_a25f9388382a57a243263678e74268e73"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25f9388382a57a243263678e74268e73">timer_a_user_data</a></td></tr>
+<tr class="memitem:a7cb36718dd13e907185633f7adaf4550" id="r_a7cb36718dd13e907185633f7adaf4550"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cb36718dd13e907185633f7adaf4550">timer_b_user_data</a></td></tr>
+<tr class="memitem:ae84408911ab3b7bfd1fee20f7e016d4c" id="r_ae84408911ab3b7bfd1fee20f7e016d4c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae84408911ab3b7bfd1fee20f7e016d4c">timer_c_user_data</a></td></tr>
+<tr class="memitem:a8f80c9f90e73dfe1745dbe48d9b558b7" id="r_a8f80c9f90e73dfe1745dbe48d9b558b7"><td class="memItemLeft" align="right" valign="top">gptimer_alarm_config_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f80c9f90e73dfe1745dbe48d9b558b7">alarm_config_a</a></td></tr>
+<tr class="memitem:ac7bf7495349e2867c97e245f6ee01d1b" id="r_ac7bf7495349e2867c97e245f6ee01d1b"><td class="memItemLeft" align="right" valign="top">gptimer_alarm_config_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7bf7495349e2867c97e245f6ee01d1b">alarm_config_b</a></td></tr>
+<tr class="memitem:a87435505df054fd2dbfd2eb83d69c089" id="r_a87435505df054fd2dbfd2eb83d69c089"><td class="memItemLeft" align="right" valign="top">gptimer_alarm_config_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87435505df054fd2dbfd2eb83d69c089">alarm_config_c</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<div class="textblock"><dl class="section author"><dt>Autor</dt><dd>Albano Peñalva (<a href="#" onclick="location.href='mai'+'lto:'+'alb'+'an'+'o.p'+'en'+'alv'+'a@'+'une'+'r.'+'edu'+'.a'+'r'; return false;">alban<span class="obfuscator">.nosp@m.</span>o.pe<span class="obfuscator">.nosp@m.</span>nalva<span class="obfuscator">.nosp@m.</span>@une<span class="obfuscator">.nosp@m.</span>r.edu<span class="obfuscator">.nosp@m.</span>.ar</a>) </dd></dl>
+<dl class="section version"><dt>Versión</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>2023-10-20</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2023 </dd></dl>
+
+<p class="definition">Definición en el archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Documentación de «define»</h2>
+<a id="aa7a65675b0d17a71d0646e743bb4d1f0" name="aa7a65675b0d17a71d0646e743bb4d1f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7a65675b0d17a71d0646e743bb4d1f0">&#9670;&#160;</a></span>RESET_COUNT_VALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RESET_COUNT_VALUE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reset timer count to 0 </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00019">19</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a> y <a class="el" href="timer__mcu_8c_source.html#l00160">TimerReset()</a>.</p>
+
+</div>
+</div>
+<a id="a0084affffdb426de14a2629cfe92c652" name="a0084affffdb426de14a2629cfe92c652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0084affffdb426de14a2629cfe92c652">&#9670;&#160;</a></span>US_RESOLUTION_HZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define US_RESOLUTION_HZ&#160;&#160;&#160;1000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00018">18</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentación de variables</h2>
+<a id="a8f80c9f90e73dfe1745dbe48d9b558b7" name="a8f80c9f90e73dfe1745dbe48d9b558b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f80c9f90e73dfe1745dbe48d9b558b7">&#9670;&#160;</a></span>alarm_config_a</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gptimer_alarm_config_t alarm_config_a</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configuration for alarm A </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00044">44</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a> y <a class="el" href="timer__mcu_8c_source.html#l00174">TimerUpdatePeriod()</a>.</p>
+
+</div>
+</div>
+<a id="ac7bf7495349e2867c97e245f6ee01d1b" name="ac7bf7495349e2867c97e245f6ee01d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7bf7495349e2867c97e245f6ee01d1b">&#9670;&#160;</a></span>alarm_config_b</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gptimer_alarm_config_t alarm_config_b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configuration for alarm B </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00045">45</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a> y <a class="el" href="timer__mcu_8c_source.html#l00174">TimerUpdatePeriod()</a>.</p>
+
+</div>
+</div>
+<a id="a87435505df054fd2dbfd2eb83d69c089" name="a87435505df054fd2dbfd2eb83d69c089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87435505df054fd2dbfd2eb83d69c089">&#9670;&#160;</a></span>alarm_config_c</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gptimer_alarm_config_t alarm_config_c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configuration for alarm C </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00046">46</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a> y <a class="el" href="timer__mcu_8c_source.html#l00174">TimerUpdatePeriod()</a>.</p>
+
+</div>
+</div>
+<a id="adb4864b7053f61a0691085c9e7f48207" name="adb4864b7053f61a0691085c9e7f48207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb4864b7053f61a0691085c9e7f48207">&#9670;&#160;</a></span>timer_a</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gptimer_handle_t timer_a = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handle for timer A </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00021">21</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>, <a class="el" href="timer__mcu_8c_source.html#l00130">TimerRead()</a>, <a class="el" href="timer__mcu_8c_source.html#l00160">TimerReset()</a>, <a class="el" href="timer__mcu_8c_source.html#l00116">TimerStart()</a>, <a class="el" href="timer__mcu_8c_source.html#l00146">TimerStop()</a> y <a class="el" href="timer__mcu_8c_source.html#l00174">TimerUpdatePeriod()</a>.</p>
+
+</div>
+</div>
+<a id="a3cf703184a43c9df961f5391e2fb1795" name="a3cf703184a43c9df961f5391e2fb1795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf703184a43c9df961f5391e2fb1795">&#9670;&#160;</a></span>timer_a_isr_p</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* timer_a_isr_p) (void *) </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to the ISR function que hicimos nosotros for timer A </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00035">35</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>.</p>
+
+</div>
+</div>
+<a id="a25f9388382a57a243263678e74268e73" name="a25f9388382a57a243263678e74268e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f9388382a57a243263678e74268e73">&#9670;&#160;</a></span>timer_a_user_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* timer_a_user_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>User data for timer A </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00040">40</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>.</p>
+
+</div>
+</div>
+<a id="aef94044d1e3bc38b47b43af16c59ea60" name="aef94044d1e3bc38b47b43af16c59ea60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef94044d1e3bc38b47b43af16c59ea60">&#9670;&#160;</a></span>timer_b</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gptimer_handle_t timer_b = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handle for timer B </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00022">22</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>, <a class="el" href="timer__mcu_8c_source.html#l00130">TimerRead()</a>, <a class="el" href="timer__mcu_8c_source.html#l00160">TimerReset()</a>, <a class="el" href="timer__mcu_8c_source.html#l00116">TimerStart()</a>, <a class="el" href="timer__mcu_8c_source.html#l00146">TimerStop()</a> y <a class="el" href="timer__mcu_8c_source.html#l00174">TimerUpdatePeriod()</a>.</p>
+
+</div>
+</div>
+<a id="a289b78452d903091ccd8f6b4021d195c" name="a289b78452d903091ccd8f6b4021d195c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a289b78452d903091ccd8f6b4021d195c">&#9670;&#160;</a></span>timer_b_isr_p</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* timer_b_isr_p) (void *) </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to the ISR function for timer B </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00036">36</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>.</p>
+
+</div>
+</div>
+<a id="a7cb36718dd13e907185633f7adaf4550" name="a7cb36718dd13e907185633f7adaf4550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb36718dd13e907185633f7adaf4550">&#9670;&#160;</a></span>timer_b_user_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* timer_b_user_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>User data for timer B </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00041">41</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>.</p>
+
+</div>
+</div>
+<a id="a2939aafd32facea4e83f1b1a2573df8d" name="a2939aafd32facea4e83f1b1a2573df8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2939aafd32facea4e83f1b1a2573df8d">&#9670;&#160;</a></span>timer_c</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gptimer_handle_t timer_c = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handle for timer C </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00023">23</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>, <a class="el" href="timer__mcu_8c_source.html#l00130">TimerRead()</a>, <a class="el" href="timer__mcu_8c_source.html#l00160">TimerReset()</a>, <a class="el" href="timer__mcu_8c_source.html#l00116">TimerStart()</a>, <a class="el" href="timer__mcu_8c_source.html#l00146">TimerStop()</a> y <a class="el" href="timer__mcu_8c_source.html#l00174">TimerUpdatePeriod()</a>.</p>
+
+</div>
+</div>
+<a id="a86031d2b8cf8f83b53cbe749d9f62112" name="a86031d2b8cf8f83b53cbe749d9f62112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86031d2b8cf8f83b53cbe749d9f62112">&#9670;&#160;</a></span>timer_c_isr_p</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* timer_c_isr_p) (void *) </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to the ISR function for timer C </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00037">37</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>.</p>
+
+</div>
+</div>
+<a id="ae84408911ab3b7bfd1fee20f7e016d4c" name="ae84408911ab3b7bfd1fee20f7e016d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae84408911ab3b7bfd1fee20f7e016d4c">&#9670;&#160;</a></span>timer_c_user_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* timer_c_user_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>User data for timer C </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00042">42</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>.</p>
+
+</div>
+</div>
+<a id="a8cbe89279afcba4e146f4f4f851f55dd" name="a8cbe89279afcba4e146f4f4f851f55dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cbe89279afcba4e146f4f4f851f55dd">&#9670;&#160;</a></span>timer_config</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const gptimer_config_t timer_config</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    .clk_src = GPTIMER_CLK_SRC_DEFAULT, </div>
+<div class="line">    .direction = GPTIMER_COUNT_UP,      </div>
+<div class="line">    .resolution_hz = <a class="code hl_define" href="delay__mcu_8c.html#a0084affffdb426de14a2629cfe92c652">US_RESOLUTION_HZ</a>,  </div>
+<div class="line">}</div>
+<div class="ttc" id="adelay__mcu_8c_html_a0084affffdb426de14a2629cfe92c652"><div class="ttname"><a href="delay__mcu_8c.html#a0084affffdb426de14a2629cfe92c652">US_RESOLUTION_HZ</a></div><div class="ttdeci">#define US_RESOLUTION_HZ</div><div class="ttdef"><b>Definition</b> <a href="delay__mcu_8c_source.html#l00020">delay_mcu.c:20</a></div></div>
+</div><!-- fragment -->
+<p>Configuration for the timer. </p>
+<p>The configuration for the timer specifies the clock source, count direction, and resolution in Hz. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="timer__mcu_8c_source.html#l00030">30</a> del archivo <a class="el" href="timer__mcu_8c_source.html">timer_mcu.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_49be0f851614b063bcfbc632da7df3a2.html">firmware</a></li><li class="navelem"><a href="dir_319af0680f9d952f5a8dd0f3a3cc10fe.html">drivers</a></li><li class="navelem"><a href="dir_c37527c85a74a26bcb6d6fe86c8565af.html">microcontroller</a></li><li class="navelem"><a href="dir_b6fd70a41ddae9f3acfd6746b8eaa8e1.html">src</a></li><li class="navelem"><a href="timer__mcu_8c.html">timer_mcu.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

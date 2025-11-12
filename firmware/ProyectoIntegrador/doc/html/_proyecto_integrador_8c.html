@@ -1,0 +1,484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto Integrador EP: Referencia del archivo C:/Repositorios/ChavesIntegrador2C_2025/firmware/ProyectoIntegrador/main/ProyectoIntegrador.c</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Proyecto Integrador EP<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_proyecto_integrador_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia del archivo ProyectoIntegrador.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;freertos/FreeRTOS.h&quot;</code><br />
+<code>#include &quot;freertos/task.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="buzzer_8h_source.html">buzzer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ble__mcu_8h_source.html">ble_mcu.h</a>&quot;</code><br />
+<code>#include &quot;ADXL335.h&quot;</code><br />
+</div>
+<p><a href="_proyecto_integrador_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Estructuras de datos</h2></td></tr>
+<tr class="memitem:acelerometro_5Fdata_5Ft" id="r_acelerometro_5Fdata_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structacelerometro__data__t.html">acelerometro_data_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura para almacenar datos del acelerómetro.  <a href="structacelerometro__data__t.html#details">Más...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a762b3a706969a47907ca7b4b37fb08c3" id="r_a762b3a706969a47907ca7b4b37fb08c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a762b3a706969a47907ca7b4b37fb08c3">PERIODO_MUESTREO_AC</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memdesc:a762b3a706969a47907ca7b4b37fb08c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodo de muestreo del acelerómetro en milisegundos.  <br /></td></tr>
+<tr class="memitem:a91b7bf4f889d4264840001e6d2f35f88" id="r_a91b7bf4f889d4264840001e6d2f35f88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91b7bf4f889d4264840001e6d2f35f88">UMBRAL_INCLINACION</a>&#160;&#160;&#160;12.0f</td></tr>
+<tr class="memdesc:a91b7bf4f889d4264840001e6d2f35f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Umbral de inclinación en grados para considerar mala postura.  <br /></td></tr>
+<tr class="memitem:ad11eda7499f1c587a259b685c3fee0bc" id="r_ad11eda7499f1c587a259b685c3fee0bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad11eda7499f1c587a259b685c3fee0bc">TIEMPO_ADVERTENCIA</a>&#160;&#160;&#160;3000</td></tr>
+<tr class="memdesc:ad11eda7499f1c587a259b685c3fee0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiempo en ms para activar advertencia (LED amarillo)  <br /></td></tr>
+<tr class="memitem:a0cc04898826f1e1726fcdff407b8dd27" id="r_a0cc04898826f1e1726fcdff407b8dd27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cc04898826f1e1726fcdff407b8dd27">TIEMPO_ALERTA</a>&#160;&#160;&#160;5000</td></tr>
+<tr class="memdesc:a0cc04898826f1e1726fcdff407b8dd27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiempo en ms para activar alerta (LED rojo + buzzer)  <br /></td></tr>
+<tr class="memitem:ad4f81f48cf552e584677baaa06236525" id="r_ad4f81f48cf552e584677baaa06236525"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4f81f48cf552e584677baaa06236525">TIEMPO_CALIBRACION</a>&#160;&#160;&#160;3000</td></tr>
+<tr class="memdesc:ad4f81f48cf552e584677baaa06236525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiempo en ms para la calibración inicial del acelerómetro.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a68feac4eb8c07322460be1a112cde516" id="r_a68feac4eb8c07322460be1a112cde516"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68feac4eb8c07322460be1a112cde516">LeerAcelerometro</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:a68feac4eb8c07322460be1a112cde516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tarea que lee el acelerómetro periódicamente.  <br /></td></tr>
+<tr class="memitem:aafc5bc214e54c214acae03b077bf42ec" id="r_aafc5bc214e54c214acae03b077bf42ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafc5bc214e54c214acae03b077bf42ec">ProcesarPostura</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:aafc5bc214e54c214acae03b077bf42ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tarea que evalúa la postura del usuario en base al ángulo de inclinación.  <br /></td></tr>
+<tr class="memitem:a7d061b1b117a7997c1db7a6d13840bce" id="r_a7d061b1b117a7997c1db7a6d13840bce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d061b1b117a7997c1db7a6d13840bce">ActualizarIndicadores</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:a7d061b1b117a7997c1db7a6d13840bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tarea que actualiza los <a class="el" href="group___l_e_d.html#gab6831a7d06c0a2bc69f9b024f6445a80" title="LED driver for the ESP-EDU Board.">LEDs</a> y buzzer según el estado de postura.  <br /></td></tr>
+<tr class="memitem:aeae1a21f625ab34656ba5ad2f5885099" id="r_aeae1a21f625ab34656ba5ad2f5885099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeae1a21f625ab34656ba5ad2f5885099">Bluetooth</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:aeae1a21f625ab34656ba5ad2f5885099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tarea que envía datos de postura al celular vía Bluetooth BLE.  <br /></td></tr>
+<tr class="memitem:a630544a7f0a2cc40d8a7fefab7e2fe70" id="r_a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a630544a7f0a2cc40d8a7fefab7e2fe70">app_main</a> (void)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a24298680dd0a4f8eaf45f15158af5135" id="r_a24298680dd0a4f8eaf45f15158af5135"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="structacelerometro__data__t.html">acelerometro_data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24298680dd0a4f8eaf45f15158af5135">datos_acelerometro</a> = {0}</td></tr>
+<tr class="memdesc:a24298680dd0a4f8eaf45f15158af5135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable global con los últimos datos del acelerómetro.  <br /></td></tr>
+<tr class="memitem:ae52d7d8e59caed42269d18ca35615b6b" id="r_ae52d7d8e59caed42269d18ca35615b6b"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae52d7d8e59caed42269d18ca35615b6b">posture_state</a> = 0</td></tr>
+<tr class="memdesc:ae52d7d8e59caed42269d18ca35615b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estado actual de la postura.  <br /></td></tr>
+<tr class="memitem:aa29cc9bfdf2ba0e0d40f5cd68fc3b6ba" id="r_aa29cc9bfdf2ba0e0d40f5cd68fc3b6ba"><td class="memItemLeft" align="right" valign="top">volatile uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa29cc9bfdf2ba0e0d40f5cd68fc3b6ba">bad_posture_time</a> = 0</td></tr>
+<tr class="memdesc:aa29cc9bfdf2ba0e0d40f5cd68fc3b6ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiempo acumulado en postura incorrecta (ms)  <br /></td></tr>
+<tr class="memitem:a63216aaf0f260903c5cbe500c9b16e48" id="r_a63216aaf0f260903c5cbe500c9b16e48"><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63216aaf0f260903c5cbe500c9b16e48">ble_task_handle</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Documentación de «define»</h2>
+<a id="a762b3a706969a47907ca7b4b37fb08c3" name="a762b3a706969a47907ca7b4b37fb08c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a762b3a706969a47907ca7b4b37fb08c3">&#9670;&#160;</a></span>PERIODO_MUESTREO_AC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PERIODO_MUESTREO_AC&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Periodo de muestreo del acelerómetro en milisegundos. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00055">55</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_proyecto_integrador_8c_source.html#l00170">LeerAcelerometro()</a> y <a class="el" href="_proyecto_integrador_8c_source.html#l00226">ProcesarPostura()</a>.</p>
+
+</div>
+</div>
+<a id="ad11eda7499f1c587a259b685c3fee0bc" name="ad11eda7499f1c587a259b685c3fee0bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad11eda7499f1c587a259b685c3fee0bc">&#9670;&#160;</a></span>TIEMPO_ADVERTENCIA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIEMPO_ADVERTENCIA&#160;&#160;&#160;3000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tiempo en ms para activar advertencia (LED amarillo) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00066">66</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_proyecto_integrador_8c_source.html#l00226">ProcesarPostura()</a>.</p>
+
+</div>
+</div>
+<a id="a0cc04898826f1e1726fcdff407b8dd27" name="a0cc04898826f1e1726fcdff407b8dd27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc04898826f1e1726fcdff407b8dd27">&#9670;&#160;</a></span>TIEMPO_ALERTA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIEMPO_ALERTA&#160;&#160;&#160;5000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tiempo en ms para activar alerta (LED rojo + buzzer) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00071">71</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_proyecto_integrador_8c_source.html#l00226">ProcesarPostura()</a>.</p>
+
+</div>
+</div>
+<a id="ad4f81f48cf552e584677baaa06236525" name="ad4f81f48cf552e584677baaa06236525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f81f48cf552e584677baaa06236525">&#9670;&#160;</a></span>TIEMPO_CALIBRACION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIEMPO_CALIBRACION&#160;&#160;&#160;3000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tiempo en ms para la calibración inicial del acelerómetro. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00076">76</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_proyecto_integrador_8c_source.html#l00170">LeerAcelerometro()</a>.</p>
+
+</div>
+</div>
+<a id="a91b7bf4f889d4264840001e6d2f35f88" name="a91b7bf4f889d4264840001e6d2f35f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91b7bf4f889d4264840001e6d2f35f88">&#9670;&#160;</a></span>UMBRAL_INCLINACION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UMBRAL_INCLINACION&#160;&#160;&#160;12.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Umbral de inclinación en grados para considerar mala postura. </p>
+<p>Cualquier desviación mayor a este valor activa las alertas </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00061">61</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_proyecto_integrador_8c_source.html#l00226">ProcesarPostura()</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="a7d061b1b117a7997c1db7a6d13840bce" name="a7d061b1b117a7997c1db7a6d13840bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d061b1b117a7997c1db7a6d13840bce">&#9670;&#160;</a></span>ActualizarIndicadores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ActualizarIndicadores </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tarea que actualiza los <a class="el" href="group___l_e_d.html#gab6831a7d06c0a2bc69f9b024f6445a80" title="LED driver for the ESP-EDU Board.">LEDs</a> y buzzer según el estado de postura. </p>
+<p>Estado 0 → LED verde encendido (postura correcta) Estado 1 → LED amarillo encendido (advertencia) Estado 2 → LED rojo encendido + buzzer (alerta) Se actualiza cada 1 segundo. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00263">263</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="buzzer_8c_source.html#l00053">BuzzerOff()</a>, <a class="el" href="buzzer_8c_source.html#l00049">BuzzerOn()</a>, <a class="el" href="led_8h_source.html#l00036">LED_1</a>, <a class="el" href="led_8h_source.html#l00035">LED_2</a>, <a class="el" href="led_8h_source.html#l00034">LED_3</a>, <a class="el" href="led_8c_source.html#l00065">LedOff()</a>, <a class="el" href="led_8c_source.html#l00046">LedOn()</a> y <a class="el" href="_proyecto_integrador_8c_source.html#l00101">posture_state</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_proyecto_integrador_8c_source.html#l00333">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a630544a7f0a2cc40d8a7fefab7e2fe70" name="a630544a7f0a2cc40d8a7fefab7e2fe70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630544a7f0a2cc40d8a7fefab7e2fe70">&#9670;&#160;</a></span>app_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void app_main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00333">333</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="_proyecto_integrador_8c_source.html#l00263">ActualizarIndicadores()</a>, <a class="el" href="ble__mcu_8h_source.html#l00030">BLE_NO_INT</a>, <a class="el" href="ble__mcu_8c_source.html#l00452">BleInit()</a>, <a class="el" href="_proyecto_integrador_8c_source.html#l00304">Bluetooth()</a>, <a class="el" href="buzzer_8c_source.html#l00043">BuzzerInit()</a>, <a class="el" href="gpio__mcu_8h_source.html#l00056">GPIO_4</a>, <a class="el" href="led_8c_source.html#l00031">LedsInit()</a>, <a class="el" href="_proyecto_integrador_8c_source.html#l00170">LeerAcelerometro()</a>, <a class="el" href="ili9341_8c_source.html#l00019">NULL</a> y <a class="el" href="_proyecto_integrador_8c_source.html#l00226">ProcesarPostura()</a>.</p>
+
+</div>
+</div>
+<a id="aeae1a21f625ab34656ba5ad2f5885099" name="aeae1a21f625ab34656ba5ad2f5885099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae1a21f625ab34656ba5ad2f5885099">&#9670;&#160;</a></span>Bluetooth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Bluetooth </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tarea que envía datos de postura al celular vía Bluetooth BLE. </p>
+<p>Envía en tiempo real a la aplicación: -Aceleraciones X,Y,Z en g. -Ángulo de inclinación en grados. -Estado de postura (correcta, advertencia, alerta). Envía datos cada 100 ms. El prefijo * indica inicio de dato en protocolo Bluetooth Electronics. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00304">304</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="ble__mcu_8c_source.html#l00544">BleSendString()</a>, <a class="el" href="mpu6050_8c_source.html#l00021">buffer</a>, <a class="el" href="_proyecto_integrador_8c_source.html#l00095">datos_acelerometro</a> y <a class="el" href="_proyecto_integrador_8c_source.html#l00101">posture_state</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_proyecto_integrador_8c_source.html#l00333">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a68feac4eb8c07322460be1a112cde516" name="a68feac4eb8c07322460be1a112cde516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68feac4eb8c07322460be1a112cde516">&#9670;&#160;</a></span>LeerAcelerometro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LeerAcelerometro </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tarea que lee el acelerómetro periódicamente. </p>
+<p>Esta tarea se ejecuta cada PERIODO_MUESTREO_AC milisegundos. Realiza las siguientes acciones:</p><ol type="1">
+<li>Lee los valores ax, ay, az del acelerómetro.</li>
+<li>Aplica un filtro de suavizado.</li>
+<li>Durante los primeros TIEMPO_CALIBRACION ms, acumula las lecturas para calcular la calibración.</li>
+<li>Después de la calibración, calcula el ángulo de inclinación continuamente. la posición base. </li>
+</ol>
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00170">170</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="_proyecto_integrador_8c_source.html#l00095">datos_acelerometro</a>, <a class="el" href="_proyecto_integrador_8c_source.html#l00055">PERIODO_MUESTREO_AC</a> y <a class="el" href="_proyecto_integrador_8c_source.html#l00076">TIEMPO_CALIBRACION</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_proyecto_integrador_8c_source.html#l00333">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="aafc5bc214e54c214acae03b077bf42ec" name="aafc5bc214e54c214acae03b077bf42ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc5bc214e54c214acae03b077bf42ec">&#9670;&#160;</a></span>ProcesarPostura()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProcesarPostura </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tarea que evalúa la postura del usuario en base al ángulo de inclinación. </p>
+<p>Si el ángulo supera el umbral definido (UMBRAL_INCLINACION), se considera postura incorrecta. Si se mantiene más de 3 s, cambia a estado de advertencia (LED amarillo). Si supera 5 s, pasa a estado de alerta (LED rojo + buzzer). Si vuelve a postura correcta, se reinicia el temporizador y el estado. Se ejecuta cada PERIODO_MUESTREO_AC milisegundos. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00226">226</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="_proyecto_integrador_8c_source.html#l00104">bad_posture_time</a>, <a class="el" href="_proyecto_integrador_8c_source.html#l00095">datos_acelerometro</a>, <a class="el" href="_proyecto_integrador_8c_source.html#l00055">PERIODO_MUESTREO_AC</a>, <a class="el" href="_proyecto_integrador_8c_source.html#l00101">posture_state</a>, <a class="el" href="_proyecto_integrador_8c_source.html#l00066">TIEMPO_ADVERTENCIA</a>, <a class="el" href="_proyecto_integrador_8c_source.html#l00071">TIEMPO_ALERTA</a> y <a class="el" href="_proyecto_integrador_8c_source.html#l00061">UMBRAL_INCLINACION</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_proyecto_integrador_8c_source.html#l00333">app_main()</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentación de variables</h2>
+<a id="aa29cc9bfdf2ba0e0d40f5cd68fc3b6ba" name="aa29cc9bfdf2ba0e0d40f5cd68fc3b6ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa29cc9bfdf2ba0e0d40f5cd68fc3b6ba">&#9670;&#160;</a></span>bad_posture_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint32_t bad_posture_time = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tiempo acumulado en postura incorrecta (ms) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00104">104</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_proyecto_integrador_8c_source.html#l00226">ProcesarPostura()</a>.</p>
+
+</div>
+</div>
+<a id="a63216aaf0f260903c5cbe500c9b16e48" name="a63216aaf0f260903c5cbe500c9b16e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63216aaf0f260903c5cbe500c9b16e48">&#9670;&#160;</a></span>ble_task_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t ble_task_handle = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00114">114</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+</div>
+</div>
+<a id="a24298680dd0a4f8eaf45f15158af5135" name="a24298680dd0a4f8eaf45f15158af5135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24298680dd0a4f8eaf45f15158af5135">&#9670;&#160;</a></span>datos_acelerometro</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="structacelerometro__data__t.html">acelerometro_data_t</a> datos_acelerometro = {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable global con los últimos datos del acelerómetro. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00095">95</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_proyecto_integrador_8c_source.html#l00304">Bluetooth()</a>, <a class="el" href="_proyecto_integrador_8c_source.html#l00170">LeerAcelerometro()</a> y <a class="el" href="_proyecto_integrador_8c_source.html#l00226">ProcesarPostura()</a>.</p>
+
+</div>
+</div>
+<a id="ae52d7d8e59caed42269d18ca35615b6b" name="ae52d7d8e59caed42269d18ca35615b6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae52d7d8e59caed42269d18ca35615b6b">&#9670;&#160;</a></span>posture_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t posture_state = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estado actual de la postura. </p>
+<p>0 = correcta, 1 = advertencia (3s), 2 = alerta (5s) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_proyecto_integrador_8c_source.html#l00101">101</a> del archivo <a class="el" href="_proyecto_integrador_8c_source.html">ProyectoIntegrador.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_proyecto_integrador_8c_source.html#l00263">ActualizarIndicadores()</a>, <a class="el" href="_proyecto_integrador_8c_source.html#l00304">Bluetooth()</a> y <a class="el" href="_proyecto_integrador_8c_source.html#l00226">ProcesarPostura()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dbcd0a1ac9d5279a430a703de3113463.html">ChavesIntegrador2C_2025</a></li><li class="navelem"><a href="dir_b2af8dfd73c0f1a95221d64ddc401dc1.html">firmware</a></li><li class="navelem"><a href="dir_5280589c96bad8a3e253f4abc397057a.html">ProyectoIntegrador</a></li><li class="navelem"><a href="dir_9d95f424bde4672275467abdcf68f4eb.html">main</a></li><li class="navelem"><a href="_proyecto_integrador_8c.html">ProyectoIntegrador.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
